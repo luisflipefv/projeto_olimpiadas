@@ -1,0 +1,56 @@
+@use "variables";
+
+.content {
+  padding: 80px 0;
+  color: variables.$branco;
+
+  &--conteudo1 {
+    background-image: linear-gradient(variables.$rosa, variables.$vinho);
+  }
+
+  &--conteudo2 {
+    background-image: linear-gradient(variables.$vinho, variables.$azul1);
+  }
+
+  &--conteudo3 {
+    background-image: linear-gradient(variables.$azul1, variables.$azul2);
+  }
+
+  &--conteudo4 {
+    background-image: linear-gradient(variables.$azul2, variables.$preto);
+  }
+  .container {
+    display: flex;
+    gap: 40px;
+
+    &--inverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__details {
+    &__title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+    &__text {
+      line-height: 22px;
+      font-size: 14px;
+    }
+  }
+  &__image {
+    max-width: 360px;
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      display: block;
+    }
+
+    &__details {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+}

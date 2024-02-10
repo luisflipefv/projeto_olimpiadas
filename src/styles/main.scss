@@ -1,0 +1,23 @@
+@use "hero";
+@use "components/infos_bar";
+@use "components/buttons";
+@use "content";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 100%;
+}
+
+p {
+  font-size: 30px;
+  font-weight: bold;
+}

@@ -1,0 +1,23 @@
+@use "../variables";
+
+.infos-bar {
+  padding: 16px 24px;
+  background-color: variables.$branco;
+  display: flex;
+  justify-content: space-between;
+
+  &__infos {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__item {
+    font-size: 14px;
+    color: variables.$preto;
+    text-align: center;
+    b {
+      font-size: 18px;
+      display: block;
+    }
+  }
+}
