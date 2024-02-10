@@ -36,4 +36,14 @@
     color: variables.$branco;
     text-align: center;
   }
+
+  @media (max-width: 640px) {
+    &__image {
+      height: 170px;
+    }
+
+    &__text {
+      font-size: 25px;
+    }
+  }
 }
